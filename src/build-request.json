@@ -1,0 +1,42 @@
+{
+  "kind": "build_request",
+  "title": "Deploy application to Internet Computer mainnet",
+  "projectName": "A Store",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Deploy the application to the Internet Computer mainnet so it is publicly accessible with a production canister URL",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Make it live"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Application is deployed to Internet Computer mainnet",
+        "All canisters (frontend and backend) are running on mainnet",
+        "Application is accessible via a public canister URL",
+        "Internet Identity authentication works with mainnet deployment",
+        "All existing features (product catalog, order system, admin dashboard) function correctly on mainnet"
+      ]
+    }
+  ],
+  "constraints": [
+    "Must maintain all existing functionality during deployment",
+    "Must use Internet Computer mainnet, not local replica",
+    "Must preserve all existing data structures and state"
+  ],
+  "nonGoals": [
+    "Modifying any application features or UI",
+    "Changing backend logic or data models",
+    "Adding new functionality beyond deployment"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Warm earth tones - Light mode */
+        --background: 0.97 0.02 50;  /* Cream */
+        --foreground: 0.25 0.04 30;  /* Dark brown */
+        --card: 1 0 0;  /* White */
+        --card-foreground: 0.25 0.04 30;
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.04 30;
+        
+        /* Terracotta as primary */
+        --primary: 0.62 0.15 25;  /* Terracotta */
+        --primary-foreground: 1 0 0;
+        
+        /* Sage green as secondary */
+        --secondary: 0.72 0.08 130;  /* Sage green */
+        --secondary-foreground: 0.25 0.04 30;
+        
+        --muted: 0.95 0.01 50;
+        --muted-foreground: 0.55 0.02 30;
+        --accent: 0.95 0.02 50;
+        --accent-foreground: 0.25 0.04 30;
+        
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        
+        --border: 0.90 0.02 50;
+        --input: 0.90 0.02 50;
+        --ring: 0.62 0.15 25;
+        
+        --chart-1: 0.62 0.15 25;
+        --chart-2: 0.72 0.08 130;
+        --chart-3: 0.80 0.10 60;
+        --chart-4: 0.55 0.12 40;
+        --chart-5: 0.65 0.08 100;
+    }
+
+    .dark {
+        --background: 0.20 0.03 30;  /* Dark brown */
+        --foreground: 0.97 0.02 50;  /* Cream */
+        --card: 0.25 0.04 30;
+        --card-foreground: 0.97 0.02 50;
+        --popover: 0.25 0.04 30;
+        --popover-foreground: 0.97 0.02 50;
+        
+        --primary: 0.68 0.18 25;  /* Lighter terracotta */
+        --primary-foreground: 0.20 0.03 30;
+        
+        --secondary: 0.65 0.10 130;  /* Lighter sage */
+        --secondary-foreground: 0.97 0.02 50;
+        
+        --muted: 0.30 0.03 30;
+        --muted-foreground: 0.70 0.02 50;
+        --accent: 0.35 0.04 30;
+        --accent-foreground: 0.97 0.02 50;
+        
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.97 0.02 50;
+        
+        --border: 0.35 0.03 30;
+        --input: 0.35 0.03 30;
+        --ring: 0.68 0.18 25;
+        
+        --chart-1: 0.68 0.18 25;
+        --chart-2: 0.65 0.10 130;
+        --chart-3: 0.75 0.12 60;
+        --chart-4: 0.60 0.14 40;
+        --chart-5: 0.70 0.10 100;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-weight: 700;
+    }
+}
+
+/* Custom utility classes for brand colors */
+@layer utilities {
+    .text-terracotta {
+        color: oklch(0.62 0.15 25);
+    }
+    
+    .text-terracotta-dark {
+        color: oklch(0.55 0.15 25);
+    }
+    
+    .text-terracotta-light {
+        color: oklch(0.70 0.15 25);
+    }
+    
+    .bg-terracotta {
+        background-color: oklch(0.62 0.15 25);
+    }
+    
+    .bg-terracotta-dark {
+        background-color: oklch(0.55 0.15 25);
+    }
+    
+    .bg-terracotta-light {
+        background-color: oklch(0.70 0.15 25);
+    }
+    
+    .border-terracotta {
+        border-color: oklch(0.62 0.15 25);
+    }
+    
+    .text-sage {
+        color: oklch(0.72 0.08 130);
+    }
+    
+    .text-sage-dark {
+        color: oklch(0.50 0.08 130);
+    }
+    
+    .bg-sage {
+        background-color: oklch(0.72 0.08 130);
+    }
+    
+    .bg-sage-dark {
+        background-color: oklch(0.50 0.08 130);
+    }
+    
+    .border-sage {
+        border-color: oklch(0.72 0.08 130);
+    }
+    
+    .bg-cream {
+        background-color: oklch(0.97 0.02 50);
+    }
+}

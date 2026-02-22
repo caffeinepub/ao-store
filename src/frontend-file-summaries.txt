@@ -1,0 +1,21 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining all routes (home, products, admin pages, orders) and wrapping them with Layout and ProfileSetupModal components.",
+  "frontend/src/components/Layout.tsx": "Application layout component with header navigation displaying \"A Store\" branding, responsive menu, and footer with attribution link to caffeine.ai.",
+  "frontend/src/components/LoginButton.tsx": "Authentication button component that handles Internet Identity login/logout with visual state indicators and proper error handling.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog that prompts new users to enter their name after first login, preventing modal flash with proper loading state handling.",
+  "frontend/src/components/AdminGuard.tsx": "Authorization guard component that restricts access to admin-only pages and displays appropriate error messages for unauthorized users.",
+  "frontend/src/components/ProductCard.tsx": "Reusable product display card showing product image, name, description, price, and optional add-to-order button.",
+  "frontend/src/components/AddProductForm.tsx": "Form component for admins to add new products with image upload, progress tracking, and validation.",
+  "frontend/src/components/OrderStatusBadge.tsx": "Badge component displaying order status with color-coded styling for pending, processing, shipped, and delivered states.",
+  "frontend/src/components/UpdateOrderStatusForm.tsx": "Form component allowing admins to update order status with dropdown selection and mutation handling.",
+  "frontend/src/components/OrderForm.tsx": "Floating cart component managing order items, quantities, and checkout process with real-time total calculation.",
+  "frontend/src/pages/ProductCatalogPage.tsx": "Public product catalog page with hero banner, product grid, and integrated order form for authenticated users.",
+  "frontend/src/pages/AdminProductsPage.tsx": "Admin page for managing products with add product form and grid display of all existing products.",
+  "frontend/src/pages/AdminOrdersPage.tsx": "Admin dashboard displaying all orders with customer information, order details, and status management controls.",
+  "frontend/src/pages/MyOrdersPage.tsx": "Customer order history page showing user's orders with product details, quantities, totals, and status badges.",
+  "frontend/src/pages/OrderSuccessPage.tsx": "Order confirmation page displayed after successful order placement with navigation options.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including user profiles, products, orders, and admin functions with proper cache invalidation.",
+  "frontend/src/index.css": "Global styles with warm earth tone color system (terracotta, sage green, cream) using OKLCH color space for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme with custom brand colors (terracotta, sage, cream), typography, and design tokens.",
+  "frontend/index.html": "HTML entry point with production-ready metadata including description and theme color for the A Store application."
+}
